@@ -101,4 +101,8 @@ final class Exercise {
         }
         return result;
     }
+
+    static int makeTheTen(int[] arr) {
+        return 0;
+    }
 }
