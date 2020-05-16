@@ -12,10 +12,15 @@ class PowerTest {
     }
 
     @Test
+    void givenZeroNumber_whenPower_shouldReturnCorrectResult() {
+        assertThat(Exercise.power(0, 5)).isEqualTo(0);
+    }
+    
+    @Test
     void givenTestOne_whenPower_shouldReturnCorrectResult() {
         assertThat(Exercise.power(2, 3)).isEqualTo(8);
     }
-    
+
     @Test
     void givenTestTwo_whenPower_shouldReturnCorrectResult() {
         assertThat(Exercise.power(3, 1)).isEqualTo(3);
