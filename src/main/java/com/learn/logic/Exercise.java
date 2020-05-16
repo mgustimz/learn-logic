@@ -103,6 +103,18 @@ final class Exercise {
     }
 
     static int makeTheTen(int[] arr) {
-        return 0;
+        int result = 0;
+        int ten = 10;
+        if (arr.length == 0) {
+            return -1;
+        } else {
+            for (int a : arr) {
+                result += a;
+                if (result >= 10) {
+                    return -1;
+                }
+            }
+        }
+        return ten-result;
     }
 }
