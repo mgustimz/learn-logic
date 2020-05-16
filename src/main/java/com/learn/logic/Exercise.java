@@ -117,4 +117,8 @@ final class Exercise {
         }
         return ten-result;
     }
+
+    static int power(int n, int power) {
+        return 0;
+    }
 }
