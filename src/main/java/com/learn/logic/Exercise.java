@@ -75,6 +75,30 @@ final class Exercise {
     }
 
     static int maxElement(int[] arr) {
-        return 0;
+        int result = Integer.MIN_VALUE;
+        if (arr.length == 0) {
+            return -1;
+        } else {
+            for (int a : arr) {
+                if (a > result) {
+                    result = a;
+                }
+            }
+        }
+        return result;
+    }
+
+    static int minElement(int[] arr) {
+        int result = Integer.MAX_VALUE;
+        if (arr.length == 0) {
+            return -1;
+        } else {
+            for (int a : arr) {
+                if (a < result) {
+                    result = a;
+                }
+            }
+        }
+        return result;
     }
 }
