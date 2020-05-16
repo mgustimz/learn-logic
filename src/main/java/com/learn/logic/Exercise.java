@@ -133,6 +133,14 @@ final class Exercise {
     }
 
     static int factorial(int n) {
-        return 0;
+        int result = 1;
+        if (n < 1) {
+            return -1;
+        } else {
+            for (int i = n; i > 0; i--) {
+                result *= i;
+            }
+        }
+        return result;
     }
 }
