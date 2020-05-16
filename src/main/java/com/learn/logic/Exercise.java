@@ -131,4 +131,8 @@ final class Exercise {
         }
         return result;
     }
+
+    static int factorial(int n) {
+        return 0;
+    }
 }
