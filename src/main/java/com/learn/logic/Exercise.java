@@ -1,6 +1,8 @@
 package com.learn.logic;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 final class Exercise {
@@ -155,6 +157,20 @@ final class Exercise {
     }
 
     static int betterArray(int[][] arr) {
-        return 0;
+        List<Integer> list = new ArrayList<>();
+        for (int[] a : arr) {
+            int result = 0;
+            for (int b : a) {
+                result += b;
+            }
+            list.add(result);
+        }
+        int result = Integer.MIN_VALUE;
+        for (int c : list) {
+            if (c > result) {
+                result = c;
+            }
+        }
+        return result;
     }
 }
