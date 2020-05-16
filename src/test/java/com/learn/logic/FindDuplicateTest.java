@@ -15,7 +15,7 @@ class FindDuplicateTest {
     @Test
     void givenNonDuplicate_whenFindDuplicate_shouldReturnCorrectResult() {
         int[] arr = new int[]{1, 2, 3};
-        assertThat(Exercise.findDuplicate(arr)).isEqualTo(-1);
+        assertThat(Exercise.findDuplicate(arr)).isEqualTo(0);
     }
 
     @Test
