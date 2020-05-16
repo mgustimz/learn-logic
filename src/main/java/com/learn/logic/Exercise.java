@@ -133,7 +133,7 @@ final class Exercise {
     }
 
     static int factorial(int n) {
-        int result = 1;
+        /*int result = 1;
         if (n < 1) {
             return -1;
         } else {
@@ -141,6 +141,16 @@ final class Exercise {
                 result *= i;
             }
         }
-        return result;
+        return result;*/
+
+        if (n < 1) {
+            return -1;
+        }
+        if (n < 2) {
+            return n;
+        } else {
+            return n * factorial(n - 1);
+        }
+
     }
 }
