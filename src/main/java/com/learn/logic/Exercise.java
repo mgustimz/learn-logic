@@ -1,12 +1,9 @@
 package com.learn.logic;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
-public final class Exercise {
+final class Exercise {
 
     private Exercise() {
     }
@@ -75,5 +72,9 @@ public final class Exercise {
                 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
         count += countArr.values().stream().filter(x -> x > 1).count();
         return count;*/
+    }
+
+    static int maxElement(int[] arr) {
+        return 0;
     }
 }
