@@ -115,10 +115,20 @@ final class Exercise {
                 }
             }
         }
-        return ten-result;
+        return ten - result;
     }
 
     static int power(int n, int power) {
-        return 0;
+        int result = 1;
+        if (power == 0) {
+            return 1;
+        }
+        if (n == 0) {
+            return 0;
+        }
+        for (int i = 0; i < power; i++) {
+            result *= n;
+        }
+        return result;
     }
 }
