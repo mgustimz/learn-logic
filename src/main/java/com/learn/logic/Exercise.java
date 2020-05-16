@@ -3,11 +3,9 @@ package com.learn.logic;
 import java.util.HashMap;
 import java.util.Map;
 
-public class App {
+public final class Exercise {
 
-    public static void main(String[] args) {
-        System.out.println(checkPrime(2));
-        System.out.println(encode("aacd"));
+    private Exercise() {
     }
 
     static boolean checkPrime(int n) {
@@ -43,5 +41,9 @@ public class App {
             }
         }
         return builder.toString();
+    }
+
+    static int findDuplicate(int[] arr) {
+        return 0;
     }
 }
