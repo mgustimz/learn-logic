@@ -153,4 +153,8 @@ final class Exercise {
         }
 
     }
+
+    static int betterArray(int[][] arr) {
+        return 0;
+    }
 }
