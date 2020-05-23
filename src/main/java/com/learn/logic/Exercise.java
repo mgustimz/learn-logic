@@ -173,4 +173,8 @@ final class Exercise {
         }
         return result;
     }
+
+    public static boolean luhnSimplified(int[] arr) {
+        return false;
+    }
 }
