@@ -174,7 +174,14 @@ final class Exercise {
         return result;
     }
 
-    public static boolean luhnSimplified(int[] arr) {
-        return false;
+    static boolean luhnSimplified(int[] arr) {
+        int result = 0;
+        if (arr.length == 0) {
+            return false;
+        }
+        for (int a : arr) {
+            result += a;
+        }
+        return (result % 10) == 0;
     }
 }
