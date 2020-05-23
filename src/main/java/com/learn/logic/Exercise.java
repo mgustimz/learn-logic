@@ -186,12 +186,20 @@ final class Exercise {
     }
 
     static boolean luhn(int[] arr) {
-        int n = 0;
         int result = 0;
         int[] asd = new int[arr.length];
         if (arr.length == 0) {
             return false;
         }
+        findLuhnSum(arr, asd);
+        for (int a : asd) {
+            result += a;
+        }
+        return (result % 10) == 0;
+    }
+
+    private static void findLuhnSum(int[] arr, int[] asd) {
+        int n;
         for (int i = 0; i < arr.length; i++) {
             if (i % 2 != 0) {
                 n = arr[i] * 2;
@@ -202,9 +210,5 @@ final class Exercise {
                 asd[i] = n;
             }
         }
-        for (int a : asd) {
-            result += a;
-        }
-        return (result % 10) == 0;
     }
 }
