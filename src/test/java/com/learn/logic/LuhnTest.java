@@ -15,12 +15,12 @@ class LuhnTest {
     @Test
     void testTwo() {
         int[] arr = new int[]{5, 4, 5, 9, 3};
-        assertThat(Exercise.luhnSimplified(arr)).isTrue();
+        assertThat(Exercise.luhn(arr)).isTrue();
     }
 
     @Test
     void testThree() {
         int[] arr = new int[0];
-        assertThat(Exercise.luhnSimplified(arr)).isFalse();
+        assertThat(Exercise.luhn(arr)).isFalse();
     }
 }

@@ -186,6 +186,25 @@ final class Exercise {
     }
 
     static boolean luhn(int[] arr) {
-        return false;
+        int n = 0;
+        int result = 0;
+        int[] asd = new int[arr.length];
+        if (arr.length == 0) {
+            return false;
+        }
+        for (int i = 0; i < arr.length; i++) {
+            if (i % 2 != 0) {
+                n = arr[i] * 2;
+                n = n > 9 ? n % 10 + 1 : n;
+                asd[i] = n;
+            } else {
+                n = arr[i];
+                asd[i] = n;
+            }
+        }
+        for (int a : asd) {
+            result += a;
+        }
+        return (result % 10) == 0;
     }
 }
