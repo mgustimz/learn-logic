@@ -184,4 +184,8 @@ final class Exercise {
         }
         return (result % 10) == 0;
     }
+
+    static boolean luhn(int[] arr) {
+        return false;
+    }
 }
