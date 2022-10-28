@@ -22,6 +22,16 @@ final class Exercise {
         return true;
     }
 
+    static List<Integer> printPrimes(int x) {
+        List<Integer> result = new ArrayList<>();
+        for (int i = 0; i < x; i++) {
+            if (checkPrime(i)) {
+                result.add(i);
+            }
+        }
+        return result;
+    }
+
     /**
      * -> (()) -> letter > 1 = ( -> letter 1 = )
      */
